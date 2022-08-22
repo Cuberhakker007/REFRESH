@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUBERHAKKER=RELATICS</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn3d.iconscout.com/3d/premium/thumb/game-refresh-button-5745890-4820139.png">
+<style>
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+    text-align: center;
+    color: #fff;
+    font-style: italic ,sans-serif;
+    font-size: 40px;
+}
+.der{
+    padding:20px 40px;
+    color: #fff;
+    background-color:rgb(63, 247, 1);
+    font-size: 20px;
+    border-radius: 10px;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media only screen and (max-width:992px){
+
+    body{
+        padding: 0;
+        margin: 0;
+        font-size: 25px;
+    }
+
+#demo{
+padding-top:50%;
+}
+
+.der{
+border: 2px solid black;
+}
+.der:hover{
+
+    color: black;
+    background-color: #fff;
+
+}
+
+}
+</style>
+</head>
+<body>
+<h1 id="demo"></h1>
+<h2 id="demo2"></h2>
+<p id="demo3"></p>
+<button class="der" onClick="window.location.reload();">Refreshing...</button>
+<script>
+var sonlar = [60,120,240,480,'tirjay',960,1260,'Qayta urining',10000,409,'tok',10042,123,4445,'Salom',654,789,90,60,34,12,1,45,0,'Battar bol',2,6,76,'2_chi',300,680,'Dovdir',500,120,'Qalesan gamer',450,676,111,-11,-110,-1000,-4000,-999999999,999999999];
+sonlar.sort(function(){return 0,3 - Math.random()});
+for(var i = 0;i < sonlar.length; i++){var rnd_index = Math.floor(Math.random()*(sonlar.length-1));var store = sonlar[i];sonlar[i] = sonlar[rnd_index]; sonlar[rnd_index] = store;}
+console.log(sonlar[1]);
+console.log(999999999 + 'uc ' + ' Golib');
+console.log(sonlar[1]  + ' uc');document.getElementById("demo").innerHTML = sonlar[1];
+document.getElementById("demo3").innerHTML = sonlar[1];
+document.getElementById("demo2").innerHTML = (999999999 + 'uc ' + ' Golib');
+const reloadtButton = document.querySelector("#reload");
+function reload() {reload = location.reload();}
+reloadButton.addEventListener("click", reload, false);
+</script>
+</body>
+</html>
